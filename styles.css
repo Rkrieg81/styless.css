@@ -1,0 +1,118 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f8f8f8;
+    color: #656565;
+}
+
+a {
+    color: #08f;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Header Styles */
+.header-logo h1 {
+    color: #161619;
+    font-size: 36px;
+}
+
+#custom-header-menu, #custom-mobile-header {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+#custom-header-menu.scrolled-header, #custom-mobile-header.scrolled-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(0);
+    opacity: 0.9;
+    z-index: 1000;
+}
+
+/* Keyframes for animation */
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
+}
+
+@-moz-keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
+}
+
+/* Post Thumbnail Styles */
+.post-thumb {
+    opacity: 0;
+    transition: opacity 0.17s ease;
+}
+
+.post-thumb.lazy-yard {
+    opacity: 1;
+}
+
+/* Utility Classes */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    border: none;
+    position: relative;
+}
+
+/* Widget Titles */
+.widget > h2, .widget > h3 {
+    display: none;
+}
+
+/* Footer Styles */
+.footer {
+    color: #ffffff;
+    background-color: #111111;
+}
+
+/* Additional Styles */
+.header-menu, .mobile-header {
+    transition: 0.5s ease all;
+}
+
+.header-menu.scrolled-header, .mobile-header.scrolled-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-animation: slide-down 0.2s;
+    -moz-animation: slide-down 0.2s;
+    animation: slide-down 0.2s;
+}
+
+/* Add any additional styles specific to your site below */
