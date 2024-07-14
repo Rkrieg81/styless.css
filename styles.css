@@ -2,11 +2,13 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background: #f8f8f8;
-    color: #656565;
+    color: #0a0a0a;
 }
 
 a {
     color: #08f;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
@@ -87,6 +89,8 @@ a:hover {
 img {
     border: none;
     position: relative;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Widget Titles */
